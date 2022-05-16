@@ -9,7 +9,7 @@ $perimetro = 2*pi()*$radio;
 //fjhkdsfjkdshf
 
 
-// echo(min(10, 150, 30, 20, -8, -200));  // -200
+// echo(min(100, 150, 30, 20, -8, -200));  // -200
 // echo(max(0, 150, 30, 20, -8, -200));  // 150
 
 // echo(abs(-6.7));  // returns 6.7
