@@ -6,6 +6,7 @@
 $radio = 13;
 $perimetro = 2*pi()*$radio;
 // echo $perimetro;
+//fjhkdsfjkdshf
 
 // echo(min(0, 150, 30, 20, -8, -200));  // -200
 // echo(max(0, 150, 30, 20, -8, -200));  // 150
