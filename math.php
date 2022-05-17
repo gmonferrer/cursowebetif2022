@@ -8,7 +8,7 @@ $radio = 18;
 $perimetro = 2*pi()*$radio;
 echo 'El perímetro es '.$perimetro . '<br>';
 //fjhkdsfjkdshf
-//mas modificaciones y otra mas más 
+//mas modificaciones
 
 
 echo 'min ' .(min(100, 150, 30, 20, -8, -200)).'<br>';  // -200
@@ -126,6 +126,6 @@ PHP_ROUND_HALF_ODD	    4	                    Redondear mitades a números impare
 //Sabiendo el perímetro de la circumferencia calcula el radio utilizando constante pi
 echo '<br>';
 $perimetro = 113.0973;
-$radio = $perimetro/(2*pi());
+$radio = $perimetro/(2*pi()); //M_PI
 echo 'El radio de la circunferencia es '. $radio;
 ?>
