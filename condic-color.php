@@ -24,10 +24,10 @@ xor - Evalua que se cumpla una y solo una condicion
 
 */
 
-$color= 'rojo';
+$color= 'azul';
 ?>
 
-<?php if($color = 'azul'){ ?>
+<?php if($color == 'azul'){ ?>
 	<!DOCTYPE html>
 	<html lang="en">
 	<head>
@@ -40,7 +40,7 @@ $color= 'rojo';
 	</html>
 <?php } ?>
 
-<?php if($color = 'rojo'){ ?>
+<?php if($color == 'rojo'){ ?>
 	<!DOCTYPE html>
 	<html lang="en">
 	<head>
@@ -49,7 +49,6 @@ $color= 'rojo';
 	</head>
 	<body>
 		<h1>Color escogido: rojo</h1>
-		<p>No puedes visitar este sito</p>
 	</body>
 	</html>
 <?php } ?>
