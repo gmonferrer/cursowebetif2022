@@ -8,7 +8,7 @@ $radio = 18;
 $perimetro = 2*pi()*$radio;
 echo 'El perímetro es '.$perimetro . '<br>';
 //fjhkdsfjkdshf
-//mas modificaciones
+//mas modificaciones y otra mas más 
 
 
 echo 'min ' .(min(100, 150, 30, 20, -8, -200)).'<br>';  // -200
