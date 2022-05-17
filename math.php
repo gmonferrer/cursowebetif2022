@@ -2,21 +2,22 @@
 
 // Funciones matemáticas:
 
-// echo(pi()); // 3.1415926535898
-$radio = 13;
+echo(pi()); // 3.1415926535898
+echo '<br>';
+$radio = 18;
 $perimetro = 2*pi()*$radio;
-// echo $perimetro;
+echo 'El perímetro es '.$perimetro . '<br>';
 //fjhkdsfjkdshf
 //mas modificaciones
 
 
-// echo(min(100, 150, 30, 20, -8, -200));  // -200
-// echo(max(0, 150, 30, 20, -8, -200));  // 150
+echo 'min ' .(min(100, 150, 30, 20, -8, -200)).'<br>';  // -200
+echo 'max ' .(max(0, 150, 30, 20, -8, -200)). '<br>' ;  // 150
 
-// echo(abs(-6.7));  // returns 6.7
-// echo(sqrt(64));  // returns 8
-// echo(round(0.60));  // returns 1
-// echo(round(0.49));  // returns 0
+echo 'abs ' .(abs(-6.7)) .'<br>' ;  // returns 6.7
+echo 'raiz ' . (sqrt(64)) .'<br>' ;  // returns 8
+echo 'round ' . (round(0.60)). '<br>';  // returns 1
+echo 'otro round '. (round(0.49)). '<br>';  // returns 0
 
 // ceil() es como round() redondeo hacia arriba
 echo(ceil(0.60) . "<br>");
@@ -31,10 +32,10 @@ echo(floor(0.40) . "<br>");
 echo(floor(5) . "<br>");
 echo(floor(5.1) . "<br>");
 echo(floor(-5.1) . "<br>");
-echo(floor(-5.9));
+echo(floor(-5.9)). '<br>';
 
-// echo(rand());
-// echo(rand(10, 100));
+echo(rand()) .'<br>';
+echo(rand(10, 100));
 
 # TODAS LAS FUNCIONES MATEMÁTICAS EN PHP
 
@@ -79,6 +80,7 @@ mt_srand()	    Semillas de Mersenne Twister, generador de número aleatorios
 octdec()	    Convierte un número octal en un número decimal
 pi()	        Devuelve el valor de PI
 pow()	        Devuelve x elevado a la potencia de y
+
 rad2deg()	    Convierte un valor en radianes en un valor en grados
 rand()	        Genera un entero aleatorio
 round()	        Redondea un número de coma flotante
@@ -89,6 +91,8 @@ srand()	        Siembra el generador de números aleatorios
 tan()	        Devuelve la tangente de un número.
 tanh()	        Devuelve la tangente hiperbólica de un número.
 */
+echo '<br>';
+echo pow(2,3);
 
 # CONSTANTES matemáticas predefinidas de PHP
 
@@ -119,4 +123,9 @@ PHP_ROUND_HALF_EVEN	    3	                    Redondear mitades a números pares
 PHP_ROUND_HALF_ODD	    4	                    Redondear mitades a números impares
 */
 
+//Sabiendo el perímetro de la circumferencia calcula el radio utilizando constante pi
+echo '<br>';
+$perimetro = 113.0973;
+$radio = $perimetro/(2*pi());
+echo 'El radio de la circunferencia es '. $radio;
 ?>
