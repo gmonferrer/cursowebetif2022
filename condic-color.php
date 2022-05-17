@@ -1,7 +1,7 @@
 <?php
 
 // if (condicion){
-// 	// Instrucciones
+// 	// Instrucciones de condicionales
 // }
 
 /* Operadores de comparacion:
