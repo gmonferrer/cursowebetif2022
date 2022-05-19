@@ -1,11 +1,17 @@
 <?php
 
-$x = 20;
+$x = 3;
 
-while($x >= 1){
-	echo $x . '<br>';
+// while($x >= 4){
+// 	echo $x . '<br>';
 
-	$x--;
-}
+// 	$x--;
+// }
 
+while($x < 14){
+		echo $x . '<br>';
+	
+		$x++;
+	}
+	
 ?>
