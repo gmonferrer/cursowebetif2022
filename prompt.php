@@ -12,8 +12,8 @@
     $prompt_msg = "Please type your name.";
     $name = prompt($prompt_msg);
 
-    $output_msg = "Hello there ".$name."!";
-    echo($output_msg);
+    echo "Hello there ".$name."!";
+    
 ?>
 <?php if($name == "azul"){ ?>
 	<!DOCTYPE html>
