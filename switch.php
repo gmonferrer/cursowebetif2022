@@ -30,25 +30,40 @@ switch($mes){
 		$saludo= "En este mes no se celebra nada";
 	break;
 }
-echo $saludo . '<br>';
-$saludo="";
+// echo $saludo . '<br>';
+// $saludo="";
 
-    //prompt function
-    function prompt($prompt_msg){
-        echo("<script type='text/javascript'> var answer = prompt('".$prompt_msg."'); </script>");
+    //prompt function solamente para strings
+    // function prompt($prompt_msg){
+    //     echo("<script type='text/javascript'> var answer = prompt('.$prompt_msg.'); </script>");
 
-        $answer = "<script type='text/javascript'> document.write(answer); </script>";
-        return($answer);
-    }
+    //     $answer = "<script type='text/javascript'> document.write(answer); </script>";
+    //     return($answer);
+    // }
 
-    //program
-    $prompt_msg = "Please type the hour";
-    //$hora= prompt($prompt_msg);
+    // //program
+    // $prompt_msg = "Please type your name.";
+    // $answer = prompt($prompt_msg);
 
-	$answer = prompt($prompt_msg);
+    // echo $answer;
+	// echo '<br>';
+    // $answer =$answer +1;
+	// echo $answer;
+	// echo '<br>';
 
-      
-
+echo 'Introduce una hora, en formato 24H'. '<br>';
+?>
+<html>
+	<body>
+		<p> Introduce una hora, en formato 24H: </p>
+		<input id="numero"><br>
+	</body>
+		<script>
+			answer = document.getElementById("numero").value;
+			answer;
+		</script>
+</html>
+<?php
 if ($answer>=15 and $answer<=20){
 	$saludo = "Estás en ETIF";
 } else {
