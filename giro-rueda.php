@@ -32,7 +32,6 @@ if ($VelRizq>=0 && $VelRder>=0) {
     //Robot va hacia "atrás"
 }
 
-
 ?>
 © 2022 GitHub, Inc.
 Terms
