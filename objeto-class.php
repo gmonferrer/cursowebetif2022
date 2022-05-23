@@ -36,5 +36,5 @@
     echo '<br>';
     var_dump($marc);
    
-
+// el this me permite que me coja los valores para marc y para persona. Si hubiera puesto $persona no me serviría para marc this object
 ?>
