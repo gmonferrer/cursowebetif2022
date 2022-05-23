@@ -15,7 +15,7 @@ $numero1 = 10;
 $numero2 = 6;
 
 $resultado = $numero1 ** $numero2;
-gettype($resultado);
+echo gettype($resultado);
 echo $resultado;
 
 /* Operadores de Asignación:
@@ -34,13 +34,13 @@ $numero5 = 5;
 // $numero = $numero + $numero5;
 $numero += $numero5;
 //$numeros += $numero5; //$numeros = $numeros + $numero5;
-echo $numero .'<br>'; //15
-$numero = $numero + 7;
+echo '<br>'. $numero .'<br>'; //15
+//$numero = $numero + 7;
 $numero += 7;
 echo $numero .'<br>'; //22
-$numero = $numero * 3;
+//$numero = $numero * 3;
 $numero *= 3;
-// echo $numero .'<br>'; //66
+echo $numero .'<br>'; //66
 // $numero = $numero % 3;
 $numero %= 3;
 // echo $numero .'<br>'; //0
@@ -61,7 +61,7 @@ $numero **= 3;
 <=
 
 -- */
-$stringNumero = 10; // String
+$stringNumero ='10'; // String
 $numero = 10; //Integer
 $numSpaceship = 13;
 $variable = 'true';
@@ -69,7 +69,7 @@ $variable = 'true';
 
 
 echo 'Igual valor?: ' . ($stringNumero==$numero) . '<br>'; //true
-echo 'Idénticos?: ' .   ($stringNumero===$numero); //false
+echo 'Idénticos?: ' .   ($stringNumero===$numero) . '<br>'; //false
 
 if ($stringNumero===$numero) {
     echo 'Idénticos valor y tipo de $stringNumero y  $numero'; }
@@ -91,7 +91,7 @@ $x--
 -- */
 
 $numero = 10;
-echo $numero .  '<br>';
+echo '<br>' . $numero .  '<br>';
 //$numero = $numero + 1;
 $numero += 1;
 echo 'Valor del $numero++= ' . $numero++ . '<br>';
@@ -113,7 +113,7 @@ echo $numero . '<br>';
 $texto = 'Cadena de Texto';
 $texto .= ' Una segunda Cadena de Texto';
 
-echo $texto;
+echo $texto . '<br>';
 
 /* Operadores Lógicos:
 
@@ -126,10 +126,10 @@ xor:
 $numero = 21;
 
 if ($numero >= 10 xor $numero > 20) {
-	echo "Se cumple toda la condición";
+	echo "Se cumple toda la condición<br>";
 }
 else{
-    echo "No se cumple la condición";
+    echo "No se cumple la condición<br>";
 }
 
 $bool= false;
@@ -139,6 +139,7 @@ if (!$bool) { //NOT FALSE = TRUE
 else{
     echo '!$bool no se cumple';
 }
+echo "<br>";
 
 $array1=['a' =>'Hola', 'b'=> 'dsad'];
 $array2=['c' =>'Adiós', 'd' =>'dsadddda'];

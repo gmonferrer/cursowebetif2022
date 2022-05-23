@@ -16,17 +16,18 @@
             }
         }
         public function formato($nombre, $apellido){
-            echo 'Nombre: ' . $nombre . '| Apellido: ' . $apellido . '<br>';
+            echo 'Nombre: ' . $nombre . '- Apellido: ' . $apellido . '<br>';
         }
     }
 
     $persona = new Persona();
-    $marc=new Persona();
+   
     $persona->guardar('Jose', 'Fernández');
     $persona->guardar('Arnau', 'Garcia');
     $persona->guardar("Pedro", "Ximenez");
     $persona->mostrar();
-   
+    echo '<br>';
+    $marc=new Persona();
     $marc->guardar('Marc', 'Esteve');
     $marc->mostrar();
    

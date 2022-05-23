@@ -15,21 +15,21 @@ $paises = array(
 	<h1>Paises</h1>
 	<?php 
 		#Solo muestra China
-        // foreach($paises as $pais){
-		// 	if ($pais == 'China') {
-		// 		echo $pais . '<br />'; 
-		//  	}
-        // }
+        foreach($paises as $pais){
+			if ($pais == 'China') {
+				echo $pais . '<br />'; 
+		 	}
+        }
 
 		#Muestra todos menos China
-		// foreach($paises as $pais){
-		// 	if ($pais == 'China') {
-        //     	continue;
-        //     }
-		// 	echo $pais . '<br />';
-        // }
+		foreach($paises as $pais){
+			if ($pais == 'China') {
+            	continue;
+            }
+			echo $pais . '<br />';
+        }
 
-		#USO DEL BREAK
+		#USO DEL BREAK: muestra paises hasta que toca China
 		foreach($paises as $pais){
 			
 			if ($pais == 'China') {

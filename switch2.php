@@ -13,9 +13,7 @@
 
 $mes = 'Diciembre';
 
-switch($mes){if (case 'Diciembre' or case=Enero else)
-			$saludo="Feliz Navidad!";
-	
+switch($mes){
 	case 'Enero':
 		$saludo= "Feliz Año Nuevo";
 	break;

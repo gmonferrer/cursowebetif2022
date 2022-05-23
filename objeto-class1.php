@@ -5,6 +5,7 @@
         public $nombre = 'Marc';
         public $apellido = 'Esteve';
         public $altura = 1.75;
+        public $edad = 40;
 
         // echo $nombre; no funciona
 
@@ -14,11 +15,13 @@
         }
     }
     $persona = new Profesor();//Creamos OBJETO. Hacemos una instancia a la clase
-    echo gettype($persona); //Muestra tipo "object"
-    echo 'El nombre del profesor es ' . $persona->nombre . ' ' . $persona->apellido . " con una altura de " . $persona->altura . 'm';
+    echo gettype($persona) . '<br>';//Muestra tipo "object"
+    var_dump($persona); //nos dice todo lo que contiene y de que tipo es todo
+    echo '<br>';
+    echo 'El nombre del profesor es ' . $persona->nombre . ' ' . $persona->apellido . " con una altura de " . $persona->altura . 'm y una edad de ' . $persona->edad . ' años';
     $persona->hablar("<br>Un cordial saludo");
     echo '<br>';
-// Creamos la clase cohe
+// Creamos la clase coche
     class coche{
         public $color = "rojo";  
         public function acelera($velocidad){echo $velocidad;}
