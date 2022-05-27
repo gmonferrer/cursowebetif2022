@@ -25,5 +25,7 @@ if (($mes == 'Diciembre') && ($verdadero==true)) {
 	$saludo="El mes no tiene celebracion";
 }
 
-echo $saludo
+echo $saludo . '<br>';
+$x = "gemma";
+echo "me encanta $x";
  ?>
