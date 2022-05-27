@@ -25,10 +25,10 @@ echo join('<br />', $semana); //Une los valores de array con un salto de linea p
 echo '<br>';
 echo count($semana); //cuenta cuandos dias hay en el array $semana
 
-rsort($semana);
+// rsort($semana);
 // echo join(', ', $semana);
 
-$semana_reverse = array_reverse($semana); //Orden inverso del array original.
-echo join(', ', $semana_reverse);
+$semana_reverse = array_reverse($semana); //Orden inverso del array
+//echo join(', ', $semana_reverse);
 
 ?>
