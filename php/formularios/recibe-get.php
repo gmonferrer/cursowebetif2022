@@ -1,13 +1,13 @@
 <?php
 
-// print_r($_GET);
+print_r($_GET);
 
 
 #Muestra en pantalla lo que hemos rellenado del formulario se puede editar y modificar el array del get
 //Incluso inyectar código: <h1>Hola</h1> o <script>alert('Hola')</script>
-
+echo '<br>';
 if(!$_GET) {
-    header('Location: http://localhost/cursoweb/formularios/ejemplo-form-index.php'); //Carpeta y archivo para rellenar el form correcto
+    header('Location: http://localhost/cursowebetif2022/php/formularios/ejemplo-form-index.php'); //Carpeta y archivo para rellenar el form correcto
 }
 if ($_GET['nombre']) { //VALIDACIÓN NOMBRE
     $nombre = $_GET['nombre'];
@@ -33,11 +33,11 @@ if ($_GET['terminos']) { //VALIDACIÓN TERMINOS
 else {
     echo 'El usuario no ha aceptado terminos';
 }
-// $nombre = $_GET['nombre'];
-// $sexo = $_GET['sexo'];
-// $fecha = $_GET['fecha'];
-// $terminos = $_GET['terminos'];
+$nombre = $_GET['nombre'];
+$sexo = $_GET['sexo'];
+$fecha = $_GET['fecha'];
+$terminos = $_GET['terminos'];
 
-echo 'Hola ' . $nombre . ' eres un ' . $sexo . ' y has escogido la fecha: '. $fecha;
-
+echo '<br>';
+echo 'Hola ' . $nombre . ' eres un ' . $sexo . ' y has escogido la fecha: '. $fecha; //puedo poner también las variables así $_GET['sexo']
 ?>
