@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Formulario Contacto</title>
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="12.estilos.css">
+	<link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 	<div class="wrap">
