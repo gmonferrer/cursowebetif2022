@@ -44,7 +44,7 @@ form textarea {
 	font-size: 1em;
 	color:#141938;
 }
-
+/* al clicar en uno de los inputs se pone de otro color */
 form input[type="text"]:focus,
 form input[type="email"]:focus,
 form input[type="password"]:focus,
@@ -59,7 +59,7 @@ form textarea {
 	max-height: 300px;
 	min-height: 150px;
 }
-
+/* Alert se refiere a toads las alertas */
 .alert {
 	padding: 1em;
 	color:#fff;
@@ -67,7 +67,7 @@ form textarea {
 	margin-bottom: 20px;
 	font-size: 14px;
 }
-
+/* en rojo las alertas del error */
 .alert.error {
 	background: #F2DEDE;
 	border:1px solid #a94442;
@@ -78,6 +78,7 @@ form textarea {
 	background: #4CAF50;
 }
 
+/* btn es el botón, así lo hemos llamado */
 .btn,
 form input[type="submit"]{
 	padding: 15px;
