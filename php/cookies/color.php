@@ -1,5 +1,7 @@
 <?php
-setcookie('color', 'red', time() + 60 * 60 * 24 * 30, '/'); //Crea cookie de nombre color, valor red
+setcookie('color', 'red', time() + 60 * 60 * 24 * 30, '/'); //Crea cookie de nombre color, valor red, esto / significa el dominio raíz, en nuestro caso localhost
+//expiración  1 mes
+setcookie('colormes', 'red', time() -1000000000000, '/'); 
 ?>
 
 <!DOCTYPE html>
@@ -14,5 +16,6 @@ setcookie('color', 'red', time() + 60 * 60 * 24 * 30, '/'); //Crea cookie de nom
     <h1>Creación cookie color</h1>
     <p>Cookie de nombre 'color' y valor 'red'</p>
 	<a href="texto.php">texto.php</a>
+    <a href="cookies-index.php">texto.php</a>
 </body>
 </html>
