@@ -40,7 +40,7 @@
     $imprime = new Impressora(); //creo el objeto imprime de la class Impressora, por tanto tendrá sus atributos y funciones
     echo '<br>';
     
-    echo $imprime->imprimeix(1,1,"DINA4", "negre"); //llamo a la función y le doy argumentos
+    $imprime->imprimeix(1,1,"DINA4", "negre"); //llamo a func y le doy valores. No hacía falta el echo pq los contiene la función
     //echo $imprime->imprimeix(1,0,"DINA4", "negre"); //compruebo que no se cumple el condicional con otros argumentos
 		?>
 </body>

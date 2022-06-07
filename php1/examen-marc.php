@@ -59,7 +59,7 @@
             echo "<br>";
             $hp->imprimeix(true,true,"DINA4","negre");
             echo "<br>";
-            $canon->imprimeix(true,true,$canon->tamany,"negre"); //puedo poner la variable pq fuera de la class ya le he dado valor a tamany
+            $canon->imprimeix(true,true,$canon->tamany,"negre"); //puedo poner la variable pq fuera de la class ya le he dado valor a tamany en la linea 50
             //4. Llamad al metodo imprimeix con canon para mostrar el mismo resultado que lo que pido en el examen
     ?>
     
