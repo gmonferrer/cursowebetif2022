@@ -1,6 +1,6 @@
 <?php
 
-$errores='';
+//$errores='';
 $errorNombre='';
 $errorCorreo='';
 
@@ -26,7 +26,7 @@ if (isset($_POST['submit'])) {
         $errorNombre = 'Por favor escribe un nombre <br>';
     }
     if (!empty($email)) {
-        $email=filter_var($email, FILTER_SANITIZE_EMAIL);//Filtro de "sanea" el correo
+        $email=filter_var($email, FILTER_SANITIZE_EMAIL);//Filtro de "sanea" el correo, que sea seguro para nosotros
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {//Filtro de "validación" del correo
             $errorCorreo = 'Por favor escribe un correo válido <br>';
         } else {

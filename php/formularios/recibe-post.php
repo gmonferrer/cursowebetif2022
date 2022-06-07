@@ -1,6 +1,6 @@
 <?php
 
-// print_r($_POST);
+print_r($_POST);
 // $nombre = $_POST['nombre'];
 // $sexo = $_POST['sexo'];
 // $fecha = $_POST['fecha'];
@@ -17,6 +17,6 @@ $sexo = $_POST['sexo'];
 $fecha = $_POST['fecha'];
 $terminos = $_POST['terminos'];
 
-echo 'Hola ' . $nombre . ' eres un ' . $sexo . ' y has escogido la fecha: '. $fecha;
+echo '<br>Hola ' . $nombre . ' eres un ' . $sexo . ' y has escogido la fecha: '. $fecha;
 
 ?>

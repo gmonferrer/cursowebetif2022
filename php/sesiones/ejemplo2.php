@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+session_start(); //continua sesion
 
 echo 'Bienvenido a la página de ejemplo #2<br />';
 

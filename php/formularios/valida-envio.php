@@ -1,6 +1,6 @@
 <?php
 
-// print_r($_SERVER);
+//print_r($_SERVER);
 // echo '<br>';
 // echo '<br>';
 // var_dump($_SERVER);
@@ -47,14 +47,14 @@ if ((!$_GET) && (!$_POST)){
 $metodo= $_SERVER['REQUEST_METHOD'];
 if ($metodo == 'GET') {//Enviado mediante GET
     if (isset($_GET['submit'])) {
-        echo 'Se han enviado los datos correctamente en el formulario 1, mediante GET <br>';
+        echo '<br>Se han enviado los datos correctamente en el formulario 1, mediante GET <br>';
     }
     if (isset($_GET['submit2'])) {
-        echo 'Se han enviado los datos correctamente del segundo formulario, mediante GET ';
+        echo '<br>Se han enviado los datos correctamente del segundo formulario, mediante GET ';
     }
     echo 'Valores del get ';
     print_r($_GET);
-    echo print_r($_POST); //VACIO
+    print_r($_POST); //VACIO
 } else { //Enviado mediante POST
     if (isset($_POST['submit'])) {
         echo 'Se han enviado los datos del primer formulario correctamente, mediante POST <br>';
@@ -69,7 +69,7 @@ if ($metodo == 'GET') {//Enviado mediante GET
     }
     echo '<br>';
     echo 'Valores del post ';
-    echo print_r($_GET); //VACIO
+    print_r($_GET); //VACIO
     print_r($_POST);
 }
 

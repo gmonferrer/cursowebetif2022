@@ -16,6 +16,6 @@ setcookie('colormes', 'red', time() -1000000000000, '/');
     <h1>Creación cookie color</h1>
     <p>Cookie de nombre 'color' y valor 'red'</p>
 	<a href="texto.php">texto.php</a>
-    <a href="cookies-index.php">texto.php</a>
+    <a href="cookies-index.php">cookies-index.php</a>
 </body>
 </html>

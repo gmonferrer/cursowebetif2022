@@ -34,7 +34,7 @@ if (isset($_POST['submit'])) {
 	}
 
 	if(!$errores){
-		$enviar_a = 'tunombre@tuempresa.com';
+		$enviar_a = 'gmonferrer@hotmail.com';
 		$asunto = 'Correo enviado desde miPagina.com';
 		$mensaje_preparado = "De: $nombre \n";
 		$mensaje_preparado .= "Correo: $correo \n";
