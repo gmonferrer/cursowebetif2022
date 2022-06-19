@@ -18,7 +18,7 @@ setcookie('color', 'yellow', time() + 60 * 60 * 24 * 30, '/'); //Crea cookie de 
 </head>
 <body>
 	<h1>Cookies establecidas</h1>
-	<p>Creadas cookies de tamaño y color</p>
+	<p>Creadas cookies de tamaño 30px y color amarillo. Si clicas en el enlace verás el texto</p>
 	<a href="texto.php">Ir a la página texto.php</a>
 </body>
 </html>

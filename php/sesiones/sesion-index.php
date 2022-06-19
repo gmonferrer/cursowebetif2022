@@ -1,10 +1,12 @@
 <?php
-	print_r($_SESSION); //me da un warning porque la había cerrado
+	//print_r($_SESSION); //me da un warning porque la había cerrado
 	//session_start();
 	// session_destroy();
 	echo '<br>Con la sesión cerrada vale  ';
 	print_r($_SESSION);
 	session_start(); // al continuarla me pone los valores de color, animal e instante
+	echo '<br> Al continuarla ';
+	print_r($_SESSION);
 	$_SESSION['nombre'] = 'Marc';
 	echo '<br>Con la sesión iniciada vale  ';
 	print_r($_SESSION);
