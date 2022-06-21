@@ -5,10 +5,10 @@ print_r($_SESSION);
 echo '<br>';
 session_destroy();
 print_r($_SESSION);
+
+
+echo'Has cerrado sesión';
 ?>
-
-Has cerrado sesión
-
 <!DOCTYPE html>
 <html lang="es">
 <head>

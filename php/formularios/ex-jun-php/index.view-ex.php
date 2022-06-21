@@ -5,7 +5,7 @@
 	<title>Formulario Contacto</title>
 	
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="estilo.css">
+	<link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 	<div class="wrap">
@@ -14,9 +14,7 @@
 
 			<input type="text" class="form-control" id="correo" name="correo" placeholder="Correo:" value="<?php if(!$enviado && isset($correo)) echo $correo ?>">
 
-			<textarea name="mensaje" class="form-control" id="mensaje" placeholder="Mensaje:"><?php if(!$enviado && isset($mensaje)) echo $mensaje ?></textarea>
-
-			<?php if (!empty($errores)): ?>
+				<?php if (!empty($errores)): ?>
 				<div class="alert error">
 					<?php echo $errores; ?>
 				</div>

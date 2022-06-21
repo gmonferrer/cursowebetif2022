@@ -6,8 +6,7 @@ $enviado = '';
 if (isset($_POST['submit'])) {
 	$nombre = $_POST['nombre'];
 	$correo = $_POST['correo'];
-	$mensaje = $_POST['mensaje'];
-
+	
 	if (!empty($nombre)) {
 		
 		$nombre= trim($nombre); //quita espacios delante y detrás
@@ -28,28 +27,19 @@ if (isset($_POST['submit'])) {
 		$errores .= 'Por favor escribe un correo <br />';
 	}
 
-	if(!empty($mensaje)){
-		$mensaje = htmlspecialchars($mensaje);
-		$mensaje = trim($mensaje);
-		$mensaje = stripslashes($mensaje);
-	} else {
-		$errores .= 'Por favor escribe el mensaje <br />';
-	}
-
 	if(!$errores){
-		$enviar_a = 'gemma.monferrer@etif.es';
-		$asunto = 'Correo enviado desde miPagina.com';
-		$mensaje_preparado = "De: $nombre \n";
-		$mensaje_preparado .= "Correo: $correo \n";
-		$mensaje_preparado .= "Mensaje: " . $mensaje;
-
-		//mail($enviar_a, $asunto, $mensaje_preparado);
+		// $enviar_a = 'gemma.monferrer@etif.es';
+		// $asunto = 'Correo enviado desde miPagina.com';
+		// $mensaje_preparado = "De: $nombre \n";
+		// $mensaje_preparado .= "Correo: $correo \n";
+		
+		// mail($enviar_a, $asunto, $mensaje_preparado);
 		$enviado = 'true';
 	}
 
 }
 
-require 'index.view.php';
+require 'index.view-ex.php';
 echo '<br>';
 print_r($_POST);
 
