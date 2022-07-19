@@ -10,6 +10,7 @@
 <body>
 	<div class="wrap">
 		<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+		<!-- Atención con arriba -->
 			<input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre:" value="<?php if(!$enviado && isset($nombre)) echo $nombre ?>">
 
 			<input type="text" class="form-control" id="correo" name="correo" placeholder="Correo:" value="<?php if(!$enviado && isset($correo)) echo $correo ?>">

@@ -9,7 +9,7 @@
 <body>
     <h1>Prueba formulario</h1>
     <form action="" method="get"> 
-    <!-- le decimos donde van los datos con action -->
+    <!-- le decimos donde van los datos con action. Todo el fichero es html aunque tiene extensión php -->
         <p> NOMBRE: </p>
         <input type="text" placeholder="Escribe tu nombre" name="nombre" id="">
         <br>
