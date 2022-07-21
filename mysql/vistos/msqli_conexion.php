@@ -7,5 +7,5 @@ if ($conexion->connect_errno){
 	die('Lo siento hubo un problema con el servidor');
 } else {
 	// Codigo
-	echo 'conexión correcta';
+	echo 'conexión correcta a nuestra ddbb';
 }
