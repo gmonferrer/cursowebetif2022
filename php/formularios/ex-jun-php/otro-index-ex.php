@@ -43,4 +43,19 @@ require 'index.view-ex.php';
 echo '<br>';
 print_r($_POST);
 
+if ($enviado == 'true'){
+try {
+	$conexion = new PDO('mysql:host=localhost;dbname=heidisql_curso', 'root', '');
+
+	//Prepared Statements
+	$statement = $conexion->prepare('INSERT INTO formulario VALUES (null, :nombre, :correo)');
+	$statement->execute(array(':nombre'=> $nombre, ':correo'=> $correo)
+
+	);
+	echo ' Datos insertados correctamente<br>';
+
+}catch(PDOException $e){
+	echo "Error: " . $e->getMessage();
+}
+}
 ?>

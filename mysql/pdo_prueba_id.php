@@ -1,7 +1,7 @@
 <?php
 
 try {
-	$conexion = new PDO('mysql:host=localhost;dbname=prueba_datos', 'root', '');
+	$conexion = new PDO('mysql:host=localhost;dbname=heidisql_curso', 'root', '');
 	
 
 	//Prepared Statements
@@ -9,11 +9,11 @@ try {
 	$statement->execute(
 		array(':id'=> 5)
 	);
-
+//Resultado de la consulta
 	$resultados = $statement->fetch();
 	print_r($resultados);
 
-}catch(PDOException $e){
+} catch(PDOException $e){
 	echo "Error: " . $e->getMessage();
 }
 

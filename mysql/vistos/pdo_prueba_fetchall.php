@@ -1,7 +1,7 @@
 <?php 
 
 try {
-	$conexion = new PDO('mysql:host=localhost;dbname=prueba_datos', 'root', '');
+	$conexion = new PDO('mysql:host=localhost;dbname=heidisql_curso', 'root', '');
 
 	//Prepared Statements
 	$statement = $conexion->prepare('SELECT * FROM usuarios');
@@ -9,10 +9,10 @@ try {
 
 	$resultados = $statement->fetchAll();
 	foreach ($resultados as $usuario) {
-		echo $usuario['nombre'].'<br>';
+		echo $usuario['id']. ' - ' . $usuario['nombre'].'<br>';
 	}
 
-}catch(PDOException $e){
+}catch(PDOException $e){ //si hay algún problema va al catch
 	echo "Error: " . $e->getMessage();
 }
 
