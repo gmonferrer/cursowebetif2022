@@ -14,8 +14,8 @@
 
 			<input type="text" class="form-control" id="correo" name="correo" placeholder="Correo:" value="<?php if(!$enviado && isset($correo)) echo $correo ?>">
 
-				<?php if (!empty($errores)): ?>
-				<div class="alert error">
+				<?php if (!empty($errores)): ?> <!--si hay errores los muestra -->
+				<div class="alert error"> 
 					<?php echo $errores; ?>
 				</div>
 			<?php elseif($enviado): ?>

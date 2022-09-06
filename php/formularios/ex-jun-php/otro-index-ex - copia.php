@@ -34,7 +34,6 @@ if (isset($_POST['submit'])) { //recibimos los datos en la variable POST (array 
 		$mensaje_preparado .= "Correo: $correo \n";
 		
 		mail($enviar_a, $asunto, $mensaje_preparado);
-		//sale este error si no modificamos el localhost:Warning: mail(): Failed to connect to mailserver at "localhost" port 25, verify your "SMTP" and "smtp_port" setting in php.ini or use ini_set() in C:\xampp\htdocs\cursowebetif2022\php\formularios\ex-jun-php\otro-index-ex.php on line 36
 		$enviado = 'true'; //si no hay errores enviado es true, antes era false
 	}
 
