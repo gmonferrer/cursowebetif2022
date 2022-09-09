@@ -59,11 +59,13 @@ h1 {
 	font-family: "Oswald", Arial, helvetica, sans-serif;
 	padding: 15px 25px;
 	cursor:not-allowed;
+	/* es cuando nos sale el prohibido */
 	color:#fff;
 	text-decoration: none;
 }
 
 .paginacion ul li a {
+	/* que me ponga la lista en horizontal, no vertical */
 	display: inline-block;
 	font-family: "Oswald", Arial, helvetica, sans-serif;
 	padding: 15px 25px;
