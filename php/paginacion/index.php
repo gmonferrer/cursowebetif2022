@@ -23,12 +23,12 @@ $postPorPagina = 5;
 
 //$inicio = ($pagina > 1) ? ($pagina * $postPorPagina - $postPorPagina) : 0 ;
 
-//intento hacer que me muestre del artículo más reciente al más antiguo:
+//intento hacer que me muestre del artículo más reciente al más antiguo, no hace falta tocar esto
 $inicio = ($pagina > 1) ? ($pagina * $postPorPagina - $postPorPagina) : 0 ;
 
 // Preparamos la consulta SQL, articulos es el statement, está conectado con la misma variable del otro fichero view
 $articulos = $conexion->prepare("
-	SELECT SQL_CALC_FOUND_ROWS * FROM articulos
+	SELECT SQL_CALC_FOUND_ROWS * FROM articulos ORDER BY id DESC
 	LIMIT $inicio, $postPorPagina
 	"); //limitamos desde el inicio a los articulos por pagina
 
