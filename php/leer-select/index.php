@@ -17,16 +17,16 @@
 		}
 	}
 
-	require 'index.view(1).php';
+	require 'index.view (1).php';
 
 	//A partir del envio del formulario, se conecta y envia  a la base de datos esa ID
 	if ($enviado){
 		try {
 			//Conectamos con la API PDO a las BBDD
-			$conexion = new PDO('mysql:host=localhost;dbname=form_db', 'root', '');
+			$conexion = new PDO('mysql:host=localhost;dbname=heidisql_curso', 'root', '');
 
 			//Buscar datos del formulario "READ" SQL
-			$statement = $conexion->prepare('SELECT * FROM usuarios_form WHERE id = :id');
+			$statement = $conexion->prepare('SELECT * FROM formulario WHERE id = :id');
 			$statement->execute(
 				array(':id'=> $id)
 			);
@@ -36,7 +36,7 @@
 			//Como mostramos los datos
 			if($resultados){
 				echo "<p style='text-align:center'> El registro es:</br> ";
-				echo "ID:" . $resultados['id'] . ' - ' . $resultados['nombre']. ' - ' . $resultados['correo']. ' - ' . $resultados['mensaje'] ;
+				echo "ID:" . $resultados['id'] . ' - ' . $resultados['nombre']. ' - ' . $resultados['correo'] ;
 				echo "</p>";
 
 			} 

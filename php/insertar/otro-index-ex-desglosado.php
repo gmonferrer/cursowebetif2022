@@ -4,9 +4,12 @@
 	$enviado = '';
 
 	if (isset($_POST['submit'])) {
+		//Recopilamos los datos que nos dan a través del formulario por el método POST, lo recibimos en la variable array asociativo $_POST
 		$nombre = $_POST['nombre'];
 		$correo = $_POST['correo'];
-		
+		$mensaje = $_POST['mensaje'];
+
+		// Sanear el nombre
 		if (!empty($nombre)) {
 			$nombre = trim($nombre);
 		} else {
@@ -23,13 +26,20 @@
 			$errores .= 'Por favor escribe un correo <br />';
 		}
 
-		
+		if(!empty($mensaje)){
+			$mensaje = htmlspecialchars($mensaje);
+			$mensaje = trim($mensaje);
+			$mensaje = stripslashes($mensaje);
+		} else {
+			$errores .= 'Por favor escribe el mensaje';
+		}
+
 		if(!$errores){
-			// $enviar_a = 'tunombre@tuempresa.com';
-			// $asunto = 'Correo enviado desde miPagina.com';
-			// $mensaje_preparado = "De: $nombre \n";
-			// $mensaje_preparado .= "Correo: $correo \n";
-			// $mensaje_preparado .= "Mensaje: " . $mensaje;
+			$enviar_a = 'tunombre@tuempresa.com';
+			$asunto = 'Correo enviado desde miPagina.com';
+			$mensaje_preparado = "De: $nombre \n";
+			$mensaje_preparado .= "Correo: $correo \n";
+			$mensaje_preparado .= "Mensaje: " . $mensaje;
 
 			//mail($enviar_a, $asunto, $mensaje_preparado);
 			$enviado = 'true';
@@ -41,18 +51,23 @@
 
 	if ($enviado == 'true'){
 		try {
+			//Estableces una conexión a la Base de datos
 			$conexion = new PDO('mysql:host=localhost;dbname=heidisql_curso', 'root', '');
-
+			//Revisas si se ha conectado
+			echo "Todo OK conectado </br>" ;
 			//Insertar datos del formulario
-			$statement = $conexion->prepare('INSERT INTO formulario VALUES (null, :nombre, :correo');
+			$statement = $conexion->prepare('INSERT INTO formulario VALUES (null, :nombre, :correo, :mensaje)');
+			//Revisar si la sentencia SQL es correcta
+			echo "OK sentencia correcta </br>";
 			$statement->execute(
-				array(':nombre'=> $nombre, ':correo'=> $correo)
+				array(':nombre'=> $nombre, ':correo'=> $correo, ':mensaje'=> $mensaje)
 			);
+			//Revisar si se ha enviado todo OK
+			echo "OK Todo enviado";
 
 		} catch(PDOException $e){
 			echo "Error: " . $e->getMessage();
 		}
 	}
-
-
+	
 ?>

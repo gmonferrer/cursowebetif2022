@@ -28,12 +28,12 @@ if (isset($_POST['submit'])) { //recibimos los datos en la variable POST (array 
 	}
 
 	if(!$errores){
-		$enviar_a = 'gemma.monferrer@etif.es';
-		$asunto = 'Correo enviado desde el app de formulario de PHP';
-		$mensaje_preparado = "De: $nombre \n";
-		$mensaje_preparado .= "Correo: $correo \n";
+		// $enviar_a = 'gemma.monferrer@etif.es';
+		// $asunto = 'Correo enviado desde el app de formulario de PHP';
+		// $mensaje_preparado = "De: $nombre \n";
+		// $mensaje_preparado .= "Correo: $correo \n";
 		
-		mail($enviar_a, $asunto, $mensaje_preparado);
+		// mail($enviar_a, $asunto, $mensaje_preparado);
 		//sale este error si no modificamos el localhost:Warning: mail(): Failed to connect to mailserver at "localhost" port 25, verify your "SMTP" and "smtp_port" setting in php.ini or use ini_set() in C:\xampp\htdocs\cursowebetif2022\php\formularios\ex-jun-php\otro-index-ex.php on line 36
 		$enviado = 'true'; //si no hay errores enviado es true, antes era false
 	}
@@ -41,15 +41,15 @@ if (isset($_POST['submit'])) { //recibimos los datos en la variable POST (array 
 }
 
 require 'index.view-ex.php';
-echo '<br>';
-print_r($_POST);
+// echo '<br>';
+// print_r($_POST);
 
 if ($enviado == 'true'){
 try { //estableces conexión con bbdd
 	$conexion = new PDO('mysql:host=localhost;dbname=heidisql_curso', 'root', ''); //bbdd
 
 	//insertar los datos del formulario con prepare
-	$statement = $conexion->prepare('INSERT INTO formulario VALUES (null, :nombre, :correo)');
+	$statement = $conexion->prepare('INSERT INTO examen VALUES (null, :nombre, :correo)');
 	$statement->execute(array(':nombre'=> $nombre, ':correo'=> $correo)
 
 	);
